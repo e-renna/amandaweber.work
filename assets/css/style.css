@@ -1,0 +1,4 @@
+.nk-navbar .nk-nav-table>.nk-nav-row-center>* {
+  /* display: table-cell; */
+  vertical-align: sub;
+}

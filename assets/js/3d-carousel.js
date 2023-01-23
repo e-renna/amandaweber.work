@@ -1,6 +1,6 @@
 // Author: Hoang Tran (https://fb.com/99.hoangtran)
 
-var radius = 400; // how big of the radius
+var radius = 320; // how big of the radius
 var autoRotate = true; // auto rotate or not
 var rotateSpeed = -120; // unit: seconds/360 degrees
 var imgWidth = 240; // width of images (unit: px)

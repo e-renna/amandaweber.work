@@ -24,6 +24,10 @@ body {
 }
 */
 
+.container.portfolio {
+    touch-action: none;
+}
+
 #drag-container,
 #spin-container {
     position: relative;

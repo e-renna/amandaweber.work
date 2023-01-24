@@ -2,3 +2,8 @@
   /* display: table-cell; */
   vertical-align: sub;
 }
+
+.contact-pic img {
+  width: auto;
+  height: auto;
+}

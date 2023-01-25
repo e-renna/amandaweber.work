@@ -1,15 +1,5 @@
 /* Author: Hoang Tran (https://fb.com/99.hoangtran) */
 /*
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html,
-body {
-    height: 100%;
-    touch-action: none;
-}
 
 body {
     overflow: hidden;
@@ -55,7 +45,6 @@ body {
     text-align: center;
     -webkit-box-shadow: 0 0 8px #fff;
     box-shadow: 0 0 8px #fff;
-    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
 }
 
 #drag-container a {
@@ -72,7 +61,6 @@ body {
 #drag-container img:hover {
     -webkit-box-shadow: 0 0 15px #fffd;
     box-shadow: 0 0 15px #fffd;
-    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
 }
 
 #ground {

@@ -57,7 +57,6 @@ document.onpointerdown = function (e) {
     clearInterval(odrag.timer);
     e = e || window.event;
     var sX = e.clientX;
-        //sY = e.clientY;
 
     this.onpointermove = function (e) {
         e = e || window.event;
@@ -66,7 +65,6 @@ document.onpointerdown = function (e) {
         tX += desX * 0.1;
         applyTranform(odrag);
         sX = nX;
-        //sY = nY;
     };
 
     this.onpointerup = function (e) {

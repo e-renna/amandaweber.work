@@ -6,7 +6,19 @@ var rotateSpeed = -120; // unit: seconds/360 degrees
 var imgWidth = 240; // width of images (unit: px)
 var imgHeight = 340; // height of images (unit: px)
 
-setTimeout(init, 1000); // TODO: Lazy Load
+onVisible(document.getElementById('ground'), () => console.log("it's visible"));
+
+function onVisible(element, callback) {
+    new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if(entry.intersectionRatio > 0) {
+          callback(element);
+          setTimeout(init, 250);
+          observer.disconnect();
+        }
+      });
+    }).observe(element);
+  }
 
 var odrag = document.getElementById('drag-container');
 var ospin = document.getElementById('spin-container');

@@ -43,9 +43,8 @@ function playSpin(yes) {
 }
 
 var sX, sY, nX, nY, desX = 0,
-    desY = 0,
     tX = 0,
-    tY = 10;
+    tY = 4;
 
 // auto spin
 if (autoRotate) {
@@ -57,31 +56,26 @@ if (autoRotate) {
 document.onpointerdown = function (e) {
     clearInterval(odrag.timer);
     e = e || window.event;
-    var sX = e.clientX,
-        sY = e.clientY;
+    var sX = e.clientX;
+        //sY = e.clientY;
 
     this.onpointermove = function (e) {
         e = e || window.event;
-        var nX = e.clientX,
-            nY = e.clientY;
+        var nX = e.clientX;
         desX = nX - sX;
-        desY = nY - sY;
         tX += desX * 0.1;
-        tY += desY * 0.1;
         applyTranform(odrag);
         sX = nX;
-        sY = nY;
+        //sY = nY;
     };
 
     this.onpointerup = function (e) {
         odrag.timer = setInterval(function () {
             desX *= 0.95;
-            desY *= 0.95;
             tX += desX * 0.1;
-            tY += desY * 0.1;
             applyTranform(odrag);
             playSpin(false);
-            if (Math.abs(desX) < 0.5 && Math.abs(desY) < 0.5) {
+            if (Math.abs(desX) < 0.5) {
                 clearInterval(odrag.timer);
                 playSpin(true);
             }

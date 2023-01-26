@@ -14,8 +14,13 @@
 }
 
 .hyundai-colours {
-    background-color: #2f5bb3;
+    background-color: #3566c8;
     color: #fff;
+}
+
+.cadillac-colours {
+    background-color: #ea7842;
+    color: #000;
 }
 
 .image-fit-100 {

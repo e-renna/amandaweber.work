@@ -3,6 +3,11 @@
     color: #fff;
 }
 
+.trnsmt-colours {
+    background-color: #a8509f;
+    color: #fff;
+}
+
 .image-fit-100 {
     width: 100%;
     height: auto;

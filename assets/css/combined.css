@@ -4762,7 +4762,7 @@ h4 {
 
 .nk-pagination {
   width: 100%;
-  background-color: #fff;
+  background-color: #575555;
   padding: 20px 0;
 }
 
@@ -4781,9 +4781,9 @@ h4 {
 .nk-pagination>a {
   display: inline-block;
   vertical-align: middle;
-  color: #171717;
+  color: #fff;
   text-transform: uppercase;
-  font-size: 0.97rem;
+  font-size: 1rem;
   text-decoration: none;
   padding: 19px;
   transition: opacity 0.5s;
